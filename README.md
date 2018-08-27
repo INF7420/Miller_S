@@ -61,5 +61,3 @@ Navigation Menu - will include links to other pages (Home, Support, and Contact)
 Main Content - will be support information for the topic the user selected.
 
 Footer - will include contact information, social media links, and copyright information
-
-
