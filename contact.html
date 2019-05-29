@@ -1,0 +1,143 @@
+      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!--[if lte IE 7]>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="lteIE7">
+<![endif]-->
+<!--[if (gt IE 7) | (!IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<title>Stacy Miller</title> 
+        	<link rel="stylesheet" href="styles/style.css" type="text/css"/>
+ </head><body>
+     <div id="navbar">
+                       
+  <!-- Brand/logo -->
+     
+        
+        
+        <a class="navbar-brand" href="index.html">
+   <img src="styles/logo.png" id="logo1" width= "300px" height= "150px" alt=""/>
+  </a>
+                         
+  <div id="navbar-right">
+               <div class="btn-group">
+    <button type="button" class="btn btn-primary"><a href="index.html" title="Click to return Home">Home Page</a></button>
+            
+    <div class="btn-group">
+     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+         <a href="Services.html">Services</a>
+      </button>
+      <div class="dropdown-menu">
+           <a class="dropdown-item" href="Services.html">Services</a>
+        <a class="dropdown-item"  href="issues.html">Support</a>
+
+                  <a class="dropdown-item"  href="custom.html">Customization</a>
+        <a class="dropdown-item" href="EDU.html">Education</a>
+          </div>
+    </div>
+                   <button type="button" class="btn btn-primary"> <a href="about.html">About</a></button>
+ 
+                  <button type="button" class="btn btn-primary"> <a href="form.html">Contact</a></button>
+    </div>
+</div>
+
+    </div>
+
+<div class="banner"></div>
+    <div id="chatModuleForm" style="margin-bottom:0px;">
+               <p class="today"></p>
+       </div>
+      
+	   <form id="submissionForm" method="post" name="entryform1" onsubmit="return submitForm(this)" action="send_email.php" method="POST" />
+	   <!-- questionpoint parameters -->
+       <input name="source" value="3" type="hidden" />
+	   <input name="language" value="1" type="hidden" />
+	   <input name="library" value="10026" type="hidden" />
+	   <input name="label1" value="Forward to CDRS? (Yes/No)" type="hidden" />
+       <input type="hidden" class="radio" value="Yes" name="field1" id="field1yes" checked="checked" />
+       <p>Asterisk (<span class="red">*</span>) denotes a required field.</p>
+       <p style="clear:right;"><label for="name">Name<span>*</span></label></p>
+       <input type="text" name="name" id="name" value="" />
+       <p><label for="email">E-mail<span>*</span></label></p>
+       <input type="text" name="email" id="email" value="" />
+	   <input name="labelemailconf" value="Confirm e-mail" type="hidden" />
+       <p><label for="emailconf">Confirm E-mail<span>*</span></label></p>
+       <input type="text" name="emailconf" id="emailconf" value="" />
+       
+       <p><label for="question">Question<span>*</span></label><br />
+       Please add as much detail as you can, including where  you have already looked for information.</p>
+       <textarea name="question" id="question" rows="10" cols=""></textarea>
+       
+       <input name="label2" value="Country" type="hidden" />
+       <p><label for="field2">Country<span>*</span></label></p>
+       <select name="field2" id="field2" onchange="addressChange(this.options[this.selectedIndex].value)">
+       	<option  value="empty">Select Country</option>
+                    <option value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Canada">Canada</option>
+            
+       </select>
+
+       <div id="addressUS">
+        <input name="label3" value="label for field3" type="hidden" />
+        <input name="label4" value="label for field4" type="hidden" />
+        <input name="label5" value="label for field5" type="hidden" />
+        <input type="hidden" name="field3" id="field3" value="" />
+        <input type="hidden" name="field4" id="field4" value="" />
+        <input type="hidden" name="field5" id="field5" value="" />
+        <input name="label6" value="ZIP" type="hidden" />    	  
+           <p><label for="field6">ZIP / Postal Code<span>*</span></label></p>
+        <input type="text" name="field6" id="field6" class="short" value="" />
+       </div> 
+       <div id="addressIntl">    
+        <input name="label3alternate" value="label for field3alternate" type="hidden" />
+        <input type="hidden" name="field3alternate" id="field3alternate" value="" />
+       </div>
+       
+       <input name="label7" value="Telephone number" type="hidden" /> 
+       <p><label for="field7">Phone</label></p>
+       <input type="text" name="field7" id="field7" value="" />   
+       
+          <input type="hidden" name="field8" id="field8" value="" />
+          <input type="hidden" name="field9" id="field9" value="">
+          <input name="questionSource" value="To General Inquiries:" type="hidden" />
+          
+                
+       <div class="buttons" style="margin-top:15px;">  
+       <input type="submit" class="submit" value="ASK YOUR QUESTION" />
+       <input type="reset" class="reset" value="CLEAR" onclick="confirmClearForm();return false" />	
+	   </div>
+      <p style="margin-top:20px;">You will receive a reply via email within five business days.</p>
+       <p style="clear:both;">
+	   If you have any problems with this service, please use our<br />
+       <a href="/rr/askalib/qphelp.php">Ask A Librarian Error Report Form</a>.</p>
+       </form>
+     
+         <p id="bottomlinks">
+      <a href="index.html#top">Back to the Top |</a> <a href="https://sis.wayne.edu/" onclick="this.target='_blank'">Wayne State University</a>
+            </p>
+<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function(){scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 40 | document.documentElement.scrollTop > 40) {
+    document.getElementById("navbar").style.padding = "5px 5px";
+      document.getElementById("logo1").height = "50";
+  document.getElementById("logo1").width = "100";
+  } else {
+    document.getElementById("navbar").style.padding = "10px 10px";
+      document.getElementById("logo1").height = "150";
+  document.getElementById("logo1").width = "300";
+  }
+}
+</script>
+    </body>
+     </html>
