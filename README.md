@@ -8,7 +8,7 @@ The proposed layouts are chic and sophisticated to engage the user and have an o
 ## Home Page
 The Home page is the main page of the company’s website. This page will provide the user an overview of the company and services offered.
 
-![alt text](https://github.com/INF7420/millers-project/blob/Wiredframes/wireframes/Home.png "Home page")
+![Home page](wireframes/Home.png)
 At the top of the page will be the company’s logo.
 
 Header - will be mission statement of the company
