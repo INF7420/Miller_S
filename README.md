@@ -21,7 +21,7 @@ Footer - will include contact information, social media links, and copyright inf
 ## Support Page
 This page will provide a quick support topics for the user to choose to narrow down support information for the user.
 
-![Support Page](wireframes/Support.png")
+![Support Page](wireframes/Support.png)
 At the top of the page will be the company’s logo.
 
 Header - will include title of page (Support)
@@ -34,7 +34,7 @@ Footer - will include contact information, social media links, and copyright inf
 ## Contact Page
 This page will allow users to connect the company through a contact form.
 
-![Contact Page](wireframes/Contact.png")
+![Contact Page](wireframes/Contact.png)
 At the top of the page will be the company’s logo.
 
 Header - will include title of page (Contact Us)
