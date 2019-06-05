@@ -8,7 +8,7 @@ The proposed layouts are chic and sophisticated to engage the user and have an o
 ## Home Page
 The Home page is the main page of the company’s website. This page will provide the user an overview of the company and services offered.
 
-![alt text](https://github.com/INF7420/millers-project/blob/Wiredframes/wireframes/Home.png "Home page")
+![Home page](wireframes/Home.png)
 At the top of the page will be the company’s logo.
 
 Header - will be mission statement of the company
@@ -21,7 +21,7 @@ Footer - will include contact information, social media links, and copyright inf
 ## Support Page
 This page will provide a quick support topics for the user to choose to narrow down support information for the user.
 
-![alt text](https://github.com/INF7420/millers-project/blob/Wiredframes/wireframes/Support.png "Support page")
+![Support Page](wireframes/Support.png)
 At the top of the page will be the company’s logo.
 
 Header - will include title of page (Support)
@@ -34,7 +34,7 @@ Footer - will include contact information, social media links, and copyright inf
 ## Contact Page
 This page will allow users to connect the company through a contact form.
 
-![alt text](https://github.com/INF7420/millers-project/blob/Wiredframes/wireframes/Contact.png "Contact page")
+![Contact Page](wireframes/Contact.png)
 At the top of the page will be the company’s logo.
 
 Header - will include title of page (Contact Us)
@@ -48,10 +48,9 @@ Footer - will include contact information, social media links, and copyright inf
 ## Support1-Support4 Pages
 These pages will provide a support information for the user for the topic that the user selected.
 
-![alt text](https://github.com/INF7420/millers-project/blob/Wiredframes/wireframes/Support1.png "Support1 page")
-![alt text](https://github.com/INF7420/millers-project/blob/Wiredframes/wireframes/Support2.png "Support2 page")
-![alt text](https://github.com/INF7420/millers-project/blob/Wiredframes/wireframes/Support3.png "Support3 page")
-![alt text](https://github.com/INF7420/millers-project/blob/Wiredframes/wireframes/Support4.png "Support4 page")
+![Support1 page](wireframes/Support1.png)
+![Support2 page](wireframes/Support3.png)
+![Support3 page](wireframes/Support3.png)
 At the top of the page will be the company’s logo.
 
 Header - will include title of page (Support {topic})
@@ -61,5 +60,3 @@ Navigation Menu - will include links to other pages (Home, Support, and Contact)
 Main Content - will be support information for the topic the user selected.
 
 Footer - will include contact information, social media links, and copyright information
-
-
