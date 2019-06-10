@@ -36,9 +36,9 @@ img.c4 { max-width: 100%; text-align: "right";}
 img.c1 {width: 100px; height: 100px;}
 img.c2 {width: 650px; float: left;  display: block}
 img.floatleftClear { float: left;  margin-left: 2em;width: 20em;}
-#bottomlinks1  {text-align: right; font-size: 14px; padding: 0px; color: grey}
-#bottomlinks  {text-align: left; font-size: 14px; padding: 0px; color: grey}
-#links       {text-align: center; color: gray;padding: 0px}
+#bottomlinks1  {text-align: right; font-size: 14px; padding: 0px; color: black}
+#bottomlinks  {text-align: left; font-size: 14px; padding: 0px; color: black}
+#links       {text-align: center; color: black;padding: 0px}
 #links a     {display: inline; margin-left: 1.5em; margin-right: 1.5em}
 a:link       {color: #2D6BA4;text-decoration: none}
 a:active     {text-decoration: none}
