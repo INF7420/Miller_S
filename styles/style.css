@@ -110,7 +110,10 @@ img.scale-with-grid {
         width: 180px;
         height: 180px;
 }
-
+img.logo{
+        width: 300px;
+        height: 150px;
+}
 
 img.floatleftClear { 
                     float: left;  
