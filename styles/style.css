@@ -104,6 +104,14 @@ img.c4 {
         margin-right: auto;
         max-width: 40%; 
         text-align: "right";}
+img.scale-with-grid {
+        max-width: 100%;
+        float: right;
+        width: 180px;
+        height: 180px;
+}
+
+
 img.floatleftClear { 
                     float: left;  
                     margin-left: 2em;width: 20em;}
