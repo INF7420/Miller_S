@@ -108,12 +108,13 @@ img.scale-with-grid {
         max-width: 100%;
         float: right;
         width: 180px;
-        height: 180px;
-}
+        height: 180px;}
+img.scale-with-grid2 {
+        width: 150px;
+        height: 150px;}
 img.logo{
         width: 300px;
-        height: 150px;
-}
+        height: 150px;}
 
 img.floatleftClear { 
                     float: left;  
