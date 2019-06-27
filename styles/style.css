@@ -44,7 +44,7 @@ body {
       color: darkblue; 
       font-family: Verdana; 
       font-size: 19px;
-      overflow-wrap: anywhere;   
+      overflow-wrap: inherit;   
       display: block}
 form {
       margin: 3em}
@@ -61,19 +61,19 @@ table {
       display: block;}
 .column {  
         flex: 10%; 
-        column-width: 400px; 
+        column-width: 200px; 
         overflow: visible; 
         display: block;}
 .column2 {  
           background-color:#f6f6f6;
           text-align: center; 
-          margin: 0px 7px 0; 
-          margin-left: 1.5em;  
+          margin-left: 1em;  
           float: left; 
           flex: 10%;  
-          width: 30%; 
-          padding: 19px 15px 15px 19px;  
-          height: 300px; }
+          width: 31%; 
+          height: auto;
+          overflow: visible; 
+        display: block; }
 .column3 { 
           flex: 10%; 
           column-width: 500px; 
@@ -87,11 +87,11 @@ table {
 
 /*Images*/
 img.c1 {
-        width: 100px;
+        width: auto;
         max-width: 100%; 
-        height: 100px;}
+        height: auto;}
 img.c2 {
-        width: 650px; 
+        width: 600px; 
         max-width: 100%;
         float: left;  
         display: block}
@@ -127,17 +127,17 @@ img.floatleftClear {
 #bottomlinks1 {
               text-align: right; 
               font-size: 14px; 
-              padding: 0px; 
+             
               color: black}
 #bottomlinks {
               text-align: left; 
               font-size: 14px; 
-              padding: 0px; 
+               
               color: black}
 #links {
         text-align: center; 
         color: black;
-        padding: 0px}
+    }
 #links a {
           display: inline; 
           margin-left: 1.5em; 
@@ -158,11 +158,11 @@ div {
 div.c2 {
         margin-left: 26em; 
         padding: 15px;
-        overflow-wrap: anywhere;}
+       overflow: visible;}
 div.c4 {
         margin-left: 26em; 
         padding: 0px;
-        overflow-wrap: anywhere;}
+       overflow: visible;}
 div.c3 {
         margin-left: 1px; 
         text-align: left; 
@@ -172,7 +172,7 @@ div.c3 {
         width: 900px;
         padding: 8px; 
         font-family: arial;
-        overflow-wrap: anywhere; }
+       overflow: visible; }
 div.western {
             font-size: 18px; 
             color: black;
@@ -181,7 +181,7 @@ div.western {
             text-indent:2px; 
             margin-bottom: 8px; 
             line-height: 120%;
-            overflow-wrap: anywhere;}
+           overflow: visible;}
 div.western1 {
               font: italic 16px "Times New Roman";
               color: black;
@@ -189,12 +189,12 @@ div.western1 {
               text-indent: .75in; 
               margin-top: 16px; 
               line-height: 107%;
-              overflow-wrap: anywhere;}
+             overflow: visible;}
 div.banner3 {
             background-color: mediumpurple; 
             padding: 11em 12px 25px;}
 div.banner {
-            padding-top: 9em}
+            padding-top: 4em}
 div.form-group{
                 padding: 8px 8px 4px 8px;}
 /*end of Divisions*/
@@ -202,7 +202,7 @@ div.form-group{
 
 /*Paragraphs*/
 p {
-    overflow-wrap: anywhere;
+   overflow: visible;
     color: darkblue; 
     font-family: Helvetica; 
     font-size: 22px; 
@@ -212,21 +212,21 @@ p.thick {
           margin-bottom: 5px; 
           font-weight: bold;
           color: darkblue;
-          overflow-wrap: anywhere;}
+         overflow: visible;}
 p.thick2 {
           color: black;
           font-weight: bold;
-          overflow-wrap: anywhere}
+         overflow: visible}
 /*end of Paragraphs*/
 
 /*Navigation Bar*/
 #navbar {
-         overflow: visible; background-color: white;
-         padding: 1px 10px 134px 5px;
+         overflow: visible; 
+         background-color: white;
+         padding: 1px 40px 200px 50px;
          transition: 0.4s;
-         position:fixed;
          width: 100%;
-         top: 0em;     
+         top: 10em;     
          z-index: 9;}
 #navbar a {
             float: left;
@@ -243,8 +243,8 @@ p.thick2 {
                 width:60%;
                 transition:.7s;
                 overflow: visible;
-                width: "300px"; 
-                height: "150px";
+                width: 300px; 
+                height: 150px;
                 display: block;}
 #navbar a:hover {
                  background-color: #ddd;
@@ -256,6 +256,7 @@ p.thick2 {
 #navbar-right {
                float: right;
                overflow: visible;}
+
 
 @media screen and (max-width: 300px) {
   #navbar {
@@ -270,7 +271,11 @@ p.thick2 {
              overflow: visible;}
   #navbar-right {
                  float: right;}
-                }
+
+  #navbar-brand {
+          height: auto;
+          float: initial; }
+        }
 /*end of Navigation bar*/
 /* Dropdown Buttons */
 .dropbtn {
