@@ -192,7 +192,7 @@ div.western1 {
              overflow: visible;}
 div.banner3 {
             background-color: mediumpurple; 
-            padding: 11em 12px 25px;}
+            padding: 3em 12px 25px;}
 div.banner {
             padding-top: 4em}
 div.form-group{
@@ -260,7 +260,7 @@ p.thick2 {
 .navbar-brand {
         height: auto;
         float: initial; }
-        
+
 @media screen and (max-width: 300px) {
   #navbar {
            background-image: url("logo.png");
