@@ -24,7 +24,7 @@
 
 
     <a class="navbar-brand" href="index.html">
-      <img src="styles/logo.png" id="logo1" />
+      <img src="styles/logo.png" id="logo1" width="300px" height="150px"/>
     </a>
 
     <div id="navbar-right">
@@ -48,9 +48,8 @@
         <button type="button" class="btn btn-primary"> <a href="form.html">Contact</a></button>
       </div>
     </div>
-
-  </div>
-
+</div>
+  
   <div class="banner"></div>
   <h1>Innovate. Inspire. Discover</h1>
   <p></p>
@@ -168,17 +167,17 @@
     window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
-      if (document.body.scrollTop > 40 | document.documentElement.scrollTop > 40) {
-        document.getElementById("navbar").style.padding = "18px 18px";
-        document.getElementById("logo1").height = "50";
-        document.getElementById("logo1").width = "100";
-      } else {
-        document.getElementById("navbar").style.padding = "0px 20px 200px";
-        document.getElementById("logo1").height = "150";
-        document.getElementById("logo1").width = "300";
-      }
-    }
-  </script>
+  if (document.body.scrollTop > 40 | document.documentElement.scrollTop > 40) {
+    document.getElementById("navbar").style.padding = "18px 18px";
+      document.getElementById("logo1").height = "50";
+  document.getElementById("logo1").width = "100";
+  } else { 
+    document.getElementById("navbar").style.padding = "0px 20px 200px";
+      document.getElementById("logo1").height = "150";
+  document.getElementById("logo1").width = "300";
+  }
+}
+</script>
 </body>
 
 </html>
