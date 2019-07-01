@@ -13,24 +13,29 @@ h1 {
     font-size: 48px; 
     color: rebeccapurple; 
     text-align: center; 
-    margin-bottom: 14px}
+    margin-bottom: 14px;}
 h2 {
     color: #2D6BA4; 
     font-family: Helvetica; 
     font-size: 32px; 
     font-weight: bold; 
-    text-align: center}
+    text-align: center;}
 h3 {
     text-align: left;  
     margin-left: 13px; 
     padding: 2px; 
-    font: italic bold 22px Georgia, serif }  
+    font: italic bold 22px Georgia, serif; }  
 h4 {
     color: black; 
     font-family:  Helvetica; 
-    font-size: 30px; 
+    font-size: 28px; 
     font-weight: bold; 
-    text-align: center}
+    text-align: center;}
+h5 {
+    color: #fff;
+    font-weight: bold; 
+    text-align: center;
+    font-size: 32px;}
 /*end of Headers*/
 
 /*Body & Form*/
@@ -39,10 +44,10 @@ body {
       color: darkblue; 
       font-family: Verdana; 
       font-size: 19px;
-      overflow-wrap: anywhere;   
-      display: block}
+      overflow: visible;   
+      display: block;}
 form {
-      margin: 3em}
+      margin: 3em;}
 /*end of body & Form*/
 
 /*Tables*/
@@ -51,24 +56,25 @@ table {
       font-family: Verdana; 
       font-size: 17px; }
 .row { 
-      margin-left: 1.5em; 
+        margin-right: auto;
+      margin-left: 0.5em; 
       overflow: visible; 
       display: block;}
 .column {  
         flex: 10%; 
-        column-width: 400px; 
+        column-width: 200px; 
         overflow: visible; 
         display: block;}
 .column2 {  
           background-color:#f6f6f6;
           text-align: center; 
-          margin: 0px 7px 0; 
-          margin-left: 1.5em;  
+          margin-left: 1em;  
           float: left; 
           flex: 10%;  
-          width: 30%; 
-          padding: 19px 15px 15px 19px;  
-          height: 300px; }
+          width: 31%; 
+          height: auto;
+          overflow: visible; 
+        display: block; }
 .column3 { 
           flex: 10%; 
           column-width: 500px; 
@@ -82,20 +88,37 @@ table {
 
 /*Images*/
 img.c1 {
-        width: 100px; 
-        height: 100px;}
+        width: auto;
+        max-width: 100%; 
+        height: auto;}
 img.c2 {
-        width: 650px; 
+        width: 600px; 
+        max-width: 100%;
         float: left;  
         display: block}
 img.c3 {
         display: block; 
         margin-left: auto;  
         margin-right: auto;  
-        width: 50%}
+        max-width: 55%}
 img.c4 {
-        max-width: 100%; 
-        text-align: "right";}
+        display: block; 
+        margin-left: auto;  
+        margin-right: auto;
+        max-width: 50%; 
+        }
+img.scale-with-grid {
+        max-width: 100%;
+        float: right;
+        width: 180px;
+        height: 180px;}
+img.scale-with-grid2 {
+        width: 150px;
+        height: 150px;}
+img.logo{
+        width: 300px;
+        height: 150px;}
+
 img.floatleftClear { 
                     float: left;  
                     margin-left: 2em;width: 20em;}
@@ -105,21 +128,21 @@ img.floatleftClear {
 #bottomlinks1 {
               text-align: right; 
               font-size: 14px; 
-              padding: 0px; 
+             
               color: black}
 #bottomlinks {
-              text-align: left; 
+              text-align: right; 
               font-size: 14px; 
-              padding: 0px; 
+               
               color: black}
 #links {
         text-align: center; 
         color: black;
-        padding: 0px}
+    }
 #links a {
           display: inline; 
-          margin-left: 1.5em; 
-          margin-right: 1.5em}
+          margin-left: 1em; 
+          margin-right: 1em}
 a:link {
         color: rgb(11, 45, 77);
         text-decoration: none}
@@ -135,12 +158,12 @@ div {
     overflow: visible;}
 div.c2 {
         margin-left: 26em; 
-        padding: 20px;
-        overflow-wrap: anywhere;}
+        padding: 15px;
+       overflow: visible;}
 div.c4 {
         margin-left: 26em; 
         padding: 0px;
-        overflow-wrap: anywhere;}
+       overflow: visible;}
 div.c3 {
         margin-left: 1px; 
         text-align: left; 
@@ -150,16 +173,16 @@ div.c3 {
         width: 900px;
         padding: 8px; 
         font-family: arial;
-        overflow-wrap: anywhere; }
+       overflow: visible; }
 div.western {
-            font-size: 16px; 
+            font-size: 18px; 
             color: black;
             font-family: "Times New Roman";
             margin-left: 0in; 
             text-indent:2px; 
             margin-bottom: 8px; 
             line-height: 120%;
-            overflow-wrap: anywhere;}
+           overflow: visible;}
 div.western1 {
               font: italic 16px "Times New Roman";
               color: black;
@@ -167,12 +190,12 @@ div.western1 {
               text-indent: .75in; 
               margin-top: 16px; 
               line-height: 107%;
-              overflow-wrap: anywhere;}
+             overflow: visible;}
 div.banner3 {
             background-color: mediumpurple; 
-            padding: 11em 12px 25px;}
+            padding: 1.5em 12px 20px;}
 div.banner {
-            padding-top: 9em}
+            padding-top: 2em}
 div.form-group{
                 padding: 8px 8px 4px 8px;}
 /*end of Divisions*/
@@ -180,7 +203,7 @@ div.form-group{
 
 /*Paragraphs*/
 p {
-    overflow-wrap: anywhere;
+   overflow: visible;
     color: darkblue; 
     font-family: Helvetica; 
     font-size: 22px; 
@@ -190,54 +213,55 @@ p.thick {
           margin-bottom: 5px; 
           font-weight: bold;
           color: darkblue;
-          overflow-wrap: anywhere;}
+         overflow: visible;}
 p.thick2 {
+          color: black;
           font-weight: bold;
-          overflow-wrap: anywhere}
+         overflow: visible}
 /*end of Paragraphs*/
 
 /*Navigation Bar*/
 #navbar {
-         overflow: visible; background-color: white;
-         padding: 1px 10px 134px 5px;
-         transition: 0.4s;
-         position:fixed;
-         width: 100%;
-         top: 0em;     
-         z-index: 9;}
+        overflow: visible; background-color: white;
+        padding: 1px 10px 150px 5px;
+        transition: 0.4s;
+               width: 100%;
+        top: 0em;     
+        z-index: 9;}
 #navbar a {
-            float: left;
-            color: white; display: block;
-            padding: 10px 20px 10px 16px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 18px; 
-            line-height: 18px;
-            border-radius: 4px;}
+           float: left;
+           color: white; display: block;
+           padding: 10px 20px 10px 16px;
+           text-align: center;
+           text-decoration: none;
+           font-size: 18px; 
+           line-height: 18px;
+           border-radius: 4px;}
 #navbar #logo1 {
-                padding-top: 0em;
-                float: left;
-                width:60%;
-                transition:.7s;
-                overflow: visible;
-                width: "300px"; 
-                height: "150px";
-                display: block;}
+               padding-top: 0em;
+               float: left;
+               width:50%;
+               transition:.7s;
+               overflow: visible;
+               display: block;}
 #navbar a:hover {
-                 background-color: #ddd;
-                 color: black;}
+                        color: black;}
 #navbar a.active {
-                  background-color: blue;
-                  color: white;
-                  overflow: visible;}
+                 background-color: blue;
+                 color: white;
+                 overflow: visible;}
 #navbar-right {
-               float: right;
-               overflow: visible;}
+              float: right;
+              overflow: visible;}
+
+.navbar-brand {
+        height: auto;
+        float: initial; }
 
 @media screen and (max-width: 300px) {
   #navbar {
            background-image: url("logo.png");
-           padding: 0px 0px !important;
+           padding: 0px 0px;
            overflow: visible;
            display: block; }
   #navbar a {
@@ -245,9 +269,14 @@ p.thick2 {
              display: block;
              text-align: left;
              overflow: visible;}
+
   #navbar-right {
                  float: right;}
-                }
+
+  .navbar-brand {
+          height: auto;
+          float: initial; }
+        }
 /*end of Navigation bar*/
 /* Dropdown Buttons */
 .dropbtn {
@@ -267,7 +296,7 @@ p.thick2 {
                 display: none;  
                 position: absolute;  
                 background-color: #2D6BA4;  
-                min-width: 90px;  
+                min-width: 40px;  
                 box-shadow: 3px 8px 2px 3px rgba(0,0,0,0.2);  
                 z-index: 99;    
                 overflow: visible;}
