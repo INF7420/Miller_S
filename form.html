@@ -94,27 +94,25 @@
   <h4> Or Fillout the Form below</h4>
 
 
-  <form method="POST" action="https://formspree.io/gr5620@wayne.edu">
+  <form id="form" method="POST" action="https://formspree.io/gr5620@wayne.edu" class="validate">
 
 
-    <div class="form-group">
+    <div class="form-group required">
       <label class="control-label">Your Name</label>
 
       <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-user"></i> </span>
-        <input type="text" class="form-control" />
+        <input id="name" type="text" minlength="3" class="form-control"  placeholder="First and Last Name" required />
       </div>
 
 
     </div>
 
-
-
-
-    <div class="form-group">
+    
+    <div class="form-group required">
       <label class="control-label">Email</label>
 
       <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-envelope"></i> </span>
-        <input type="email" class="form-control" />
+        <input id= "email" type="email" class="form-control" placeholder="email@example.edu" required/>
       </div>
 
     </div>
@@ -124,13 +122,13 @@
       <label class="control-label">Phone</label>
 
       <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-earphone"></i> </span>
-        <input type="tel" placeholder="xxx-xxx-xxxx" /></div>
+        <input id= "telephone" type="text" class= "form-control" placeholder="xxx-xxx-xxxx" /></div>
 
 
     </div>
 
 
-    <div class="form-group">
+    <div class="form-group required">
       <label class="control-label">Issues/ Questions</label>
 
       <h3>
@@ -138,22 +136,23 @@
       </h3>
 
       <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-edit"></i> </span>
-        <textarea class="form-control" rows="6"></textarea>
+        <textarea id="message" name="message" minlength="30" class="form-control" rows="6" required></textarea>
       </div>
 
     </div>
-
+    <div class="form-group required"><label class="control-label">Required Fields</label></div>
 
     <button type="submit" class="btn btn-primary btn-lg">
       Submit
     </button>
 
+    
   </form>
 
   <p id="bottomlinks">&#169; 2019 Library Media and Instructional Technology | 800-555-6439 <a href="index.html#top"> |
       Back to the Top</a></p>
 
-
+      <script src="/styles/form.js" ></script>
 
   <script type="text/javascript">
 
