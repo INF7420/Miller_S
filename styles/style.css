@@ -324,3 +324,21 @@ p.thick2 {
         float:left;
         width:60%;
         padding:0px 0px;}
+        
+  .form-group.required .control-label:after {
+                color: #dd0000;
+                content: "*";
+                margin-left: 6px;
+            }
+
+[type="submit"]:hover {
+        background: #cecc78;  }
+            
+           
+.error-message {
+       margin-top: -1em;
+       margin-bottom: 1em;
+       font-style: italic;
+       font-weight: bold;
+       color: #C62828;  }
+      
