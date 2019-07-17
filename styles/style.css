@@ -329,6 +329,7 @@ p.thick2 {
                 color: #dd0000;
                 content: "*";
                 margin-left: 6px;
+                margin-bottom: .4em;
             }
 
 [type="submit"]:hover {
