@@ -152,6 +152,7 @@ a:active {
 /*end of Links*/
 
 /*Divisions*/
+
 div {
     display: block; 
     resize: both; 
@@ -206,7 +207,7 @@ p {
    overflow: visible;
     color: darkblue; 
     font-family: Helvetica; 
-    font-size: 22px; 
+    font-size: 24px; 
     text-align: center}
 p.thick {
           font-size: 18px; 
@@ -218,6 +219,9 @@ p.thick2 {
           color: black;
           font-weight: bold;
          overflow: visible}
+ul {
+        list-style-type: square
+}
 /*end of Paragraphs*/
 
 /*Navigation Bar*/
